@@ -7,22 +7,20 @@ import "fmt"
 	Testing a variation of Println and Printf.
 */
 
-// Multiple Variable Declarations
+// Multiple Variable Declarations mix with Short Declaration
 func main() {
-	var agent1, agent2, agent3 string = "Sage", "Brimstone", "Omen"
+	var companyname, companyage, companyAddress = "Sage", 2, "Jl. Jalan Happy"
+	one, two, three := "1", 2.33, "3"
 
-	var one, two, three int
-	one, two, three = 1, 2, 3
-
-	fmt.Println(agent1, agent2, agent3)
+	fmt.Println(companyname, companyage, companyAddress)
 	fmt.Println(one, two, three)
-	fmt.Printf("%T, %T, %T", agent1, agent2, agent3)
+	fmt.Printf("%T, %T, %T", companyname, companyage, companyAddress)
 	fmt.Printf("%T, %T, %T", one, two, three)
 }
 
 /*
 	Result:
-	Sage Brimstone Omen
-	1 2 3
-	string, string, stringint, int, int
+	Sage 2 Jl. Jalan Happy
+	1 2.33 3
+	string, int, stringstring, float64, string
 */
