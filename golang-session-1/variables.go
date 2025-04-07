@@ -1,26 +1,15 @@
 package main
 
-import "fmt"
-
 /*
 	This is a Variable Project.
 	Testing a variation of Println and Printf.
 */
 
-// Multiple Variable Declarations mix with Short Declaration
+// Underscore Variable
 func main() {
-	var companyname, companyage, companyAddress = "Sage", 2, "Jl. Jalan Happy"
-	one, two, three := "1", 2.33, "3"
+	var aVariable string
+	var companyname, companyage, companyaddress = "Sage", 2, "Jl. Jalan Happy"
 
-	fmt.Println(companyname, companyage, companyAddress)
-	fmt.Println(one, two, three)
-	fmt.Printf("%T, %T, %T", companyname, companyage, companyAddress)
-	fmt.Printf("%T, %T, %T", one, two, three)
+	// Underscore digunakan untuk menghindari error ketika variable tidak digunakan
+	_, _, _, _ = aVariable, companyname, companyage, companyaddress
 }
-
-/*
-	Result:
-	Sage 2 Jl. Jalan Happy
-	1 2.33 3
-	string, int, stringstring, float64, string
-*/
