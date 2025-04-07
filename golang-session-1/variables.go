@@ -1,23 +1,28 @@
 package main
 
-import "fmt" //fmt is a "Format Package"
+import "fmt"
 
 /*
 	This is a Variable Project.
 	Testing a variation of Println and Printf.
 */
 
-// Variable without Data Type
+// Multiple Variable Declarations
 func main() {
-	name := "Mr 4k" //set data
-	age := 20
+	var agent1, agent2, agent3 string = "Sage", "Brimstone", "Omen"
 
-	fmt.Println(name, age)
-	fmt.Printf("%T, %T", name, age)
+	var one, two, three int
+	one, two, three = 1, 2, 3
+
+	fmt.Println(agent1, agent2, agent3)
+	fmt.Println(one, two, three)
+	fmt.Printf("%T, %T, %T", agent1, agent2, agent3)
+	fmt.Printf("%T, %T, %T", one, two, three)
 }
 
 /*
 	Result:
-	Mr 4k 20
-	string, int
+	Sage Brimstone Omen
+	1 2 3
+	string, string, stringint, int, int
 */
