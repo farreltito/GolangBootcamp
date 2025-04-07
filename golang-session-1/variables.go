@@ -3,25 +3,21 @@ package main
 import "fmt" //fmt is a "Format Package"
 
 /*
-	This is a Hello World Project.
+	This is a Variable Project.
 	Testing a variation of Println and Printf.
 */
 
-// Variable without data type
+// Variable without Data Type
 func main() {
-	var name string = "Tito" //set data
-	var age int = 25
+	name := "Mr 4k" //set data
+	age := 20
 
-	name = "Mr 4k" //set data #2 or re-assign (Change)
-	age = 20
-
-	fmt.Printf("%T, %T", name, age) //%T sesuai dengan posisi, yg pertama buat name, yang kedua buat age
+	fmt.Println(name, age)
+	fmt.Printf("%T, %T", name, age)
 }
 
-// Result: "This author name is%!(EXTRA string=Mr 4k)and his/her age is 20"
-
 /*
-	#### Note ####
-	Advantages of Go languages:
-	- All variables used.
+	Result:
+	Mr 4k 20
+	string, int
 */
