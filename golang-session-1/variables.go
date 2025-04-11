@@ -1,12 +1,11 @@
 package main
 
-/*
 import "fmt"
 
-
+/*
 	This is a Variable Project.
 	Testing a variation of Println and Printf.
-
+*/
 
 // fmt.Printf Usage (verb)
 func main() {
@@ -19,7 +18,7 @@ func main() {
 	fmt.Printf("This company name is %s, this company age is %d, and this company address is at %s", companyname, companyage, companyaddress)
 }
 
-
+/*
 	Result:
 	Data type of this variable is float64
 	Data type of this variable is string
