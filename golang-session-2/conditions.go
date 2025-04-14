@@ -52,10 +52,9 @@ func main() {
 	}
 
 	//Switch (Fallthrough Keyword)
-	var max3 = 10
+	var max3 = 12
 	var min3 = 0
 	randomNumber10 := rand.IntN(max3-min3) + min3
-	//randomNumber10 = 0
 	fmt.Println("Your number:", randomNumber10)
 
 	switch {
@@ -66,9 +65,9 @@ func main() {
 		fallthrough
 	case randomNumber10 < 7:
 		fmt.Println("It's okay bad luck in randomizer, try again.\n")
-	default:
+	default: //jika kelebihan akan masuk ke default
 		{
-			fmt.Println("Try Again and you can get 10!\n")
+			fmt.Println("Whoops too far\n")
 		}
 	}
 
